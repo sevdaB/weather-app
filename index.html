@@ -14,26 +14,33 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>New York, USA</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Mostly Sunny</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="http://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Mostly-sunny"
-            />
-            12°C | °F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>New York, USA</h1>
             <ul>
-              <li>Precipitation: 1%</li>
-              <li>Humidity:62%</li>
-              <li>Wind: 11 mph</li>
+              <li>Friday 05:00</li>
+              <li>Mostly Sunny</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="" alt="Clear" id="icon" />
+                <div>
+                  <strong id="temperature"></strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 1%</li>
+                <li>Humidity:62%</li>
+                <li>Wind: 11 mph</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small
